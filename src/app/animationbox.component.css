@@ -1,0 +1,145 @@
+body {
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.intro-container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  top : 0;
+  bottom: 0;
+  right:0;
+  left: 0;
+  /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
+  background: linear-gradient(180deg,#23D5AB,#ffb6c1,#adff2f);
+  background-size: 350% 350%;
+}
+
+.logo{
+  width: 250px;
+  height: 250px;
+  display: block;
+  position: absolute;
+  left: 42%;
+  top:30%;
+  border-radius: 100%;
+  border: 4px solid #000000;
+  background: #ffffff;
+}
+
+.logo:hover {
+  box-shadow: 0 0 30px #000000;
+}
+
+.logo .fox-face {
+  width: 130px;
+  height: 120px;
+  background: #ffa500;
+  display: block;
+  position: absolute;
+  top: 27%;
+  left: 25%;
+  border-radius: 20px 0 35px 20px;
+  -ms-transform: skewY(-30deg) rotate(10deg); /* IE 9 */
+  -webkit-transform: skewY(-30deg) rotate(10deg); /* Safari */
+  transform: skewY(-30deg) rotate(10deg); /* Standard syntax */
+}
+
+.logo .fox-face::before{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  border-top-left-radius: 40px;
+  border-left: 10px solid #ffa500;
+  border-right: 60px solid #ffa500;
+  border-bottom: 70px solid #ffa500;
+  content:"";
+}
+
+.logo:hover .fox-face::before{
+  transform: skew(0deg,-10deg);
+}
+
+.logo .fox-face::after{
+  top: 9px;
+  right:7px;
+  position : absolute;
+  border-left: 10px solid #ffffff;
+  border-right: 25px solid #ffffff;
+  border-bottom: 35px solid #ffffff;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 130px;
+  border-bottom-right-radius: 40px;
+  content:"";
+}
+
+.logo .fox-face .white-pad-right{
+  width: 30px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left:2px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.logo .fox-face .white-pad-left{
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left:35px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.logo .fox-face .white-pad-right .fox-right-eye{
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  border-radius: 100%;
+  display: block;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  transform: skewY(30deg);
+}
+
+
+.logo .fox-face .white-pad-left .fox-left-eye{
+  width: 16px;
+  height: 15px;
+  background: #000000;
+  border-radius: 100%;
+  display: block;
+  top: 22px;
+  left: 30px;
+  position: absolute;
+  transform: skewY(30deg);
+}
+
+.logo:hover .fox-face .white-pad-left .fox-left-eye{
+  width: 15px;
+  height: 5px;
+  top: 28px;
+  transform: skewY(35deg);
+}
+
+
+.logo .fox-face .nose{
+  width: 18px;
+  height: 18px;
+  background: #000000;
+  border-radius: 100%;
+  display: block;
+  top: 99px;
+  left: 0;
+  position: absolute;
+  transform: skewY(30deg);
+}
