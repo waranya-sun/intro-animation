@@ -1,5 +1,4 @@
 body {
-  background: #ffffff;
   box-sizing: border-box;
 }
 
@@ -12,7 +11,6 @@ body {
   bottom: 0;
   right:0;
   left: 0;
-  /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
   background: linear-gradient(180deg,#23D5AB,#ffb6c1,#adff2f);
   background-size: 350% 350%;
 }
@@ -21,9 +19,7 @@ body {
   width: 250px;
   height: 250px;
   display: block;
-  position: absolute;
-  left: 42%;
-  top:30%;
+  margin: auto;
   border-radius: 100%;
   border: 4px solid #000000;
   background: #ffffff;
@@ -33,14 +29,20 @@ body {
   box-shadow: 0 0 30px #000000;
 }
 
+.vertical-align{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .logo .fox-face {
   width: 130px;
   height: 120px;
   background: #ffa500;
   display: block;
-  position: absolute;
-  top: 27%;
-  left: 25%;
+
+  /* margin is related to its parent which is .logo div*/
+  margin: 60px auto;
   border-radius: 20px 0 35px 20px;
   -ms-transform: skewY(-30deg) rotate(10deg); /* IE 9 */
   -webkit-transform: skewY(-30deg) rotate(10deg); /* Safari */
@@ -143,3 +145,4 @@ body {
   position: absolute;
   transform: skewY(30deg);
 }
+
